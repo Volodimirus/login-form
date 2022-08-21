@@ -1,0 +1,92 @@
+.login-form {
+  background-color: #fff;
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #343434;
+}
+
+.login-form--title {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.login-form--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form--form label {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.login-form--form input {
+  min-height: 40px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.login-form--form input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.password-reset {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.password-reset,
+.sign-up {
+  transition: 0.5s color;
+}
+
+.password-reset:hover,
+.sign-up:hover {
+  color: #b1b1b1;
+}
+
+.login-button {
+  width: 80%;
+  background-image: linear-gradient(to right, skyblue, violet, pink);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 40px auto;
+  transition: 1s transform;
+}
+
+.login-button:hover {
+  transform: scale(0.9);
+}
+
+.sign-up--label {
+  font-size: 0.8em;
+  margin-top: auto;
+}
+
+.sign-up {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width: 393px) {
+  .login-form {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  .password-reset {
+    text-align: center;
+  }
+}
